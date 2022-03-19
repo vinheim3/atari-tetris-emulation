@@ -10,7 +10,7 @@ At the end, you will
 
 ### Table of Contents
 
-1. [The architecture of the system](architecture)
+1. [The architecture of the system](architecture.md)
 2. Emulating the cpu (6502)
 3. IRQ + port handling
 4. Tilemap rendering
