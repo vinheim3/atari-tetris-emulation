@@ -12,4 +12,4 @@ In Atari Tetris' case:
 - **PPU**: No special hardware here. We'll dive into how the PPU hardware renders to the screen in its section
 - **APU**: Atari includes their own sound chip, Pokey, to handle sound. This chip is capable of much more, eg keyboard handling and interrupting the CPU. For Tetris, we are only concerned with how it handles sound, and how it reads values from external hardware such as the joystick
 
-<image>
+![Architecture](atariarch.png)
