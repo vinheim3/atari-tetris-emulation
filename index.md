@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+## Emulating Atari's Tetris
 
-You can use the [editor on GitHub](https://github.com/vinheim3/atari-tetris-emulation/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+You may have just come from emulating Space Invaders, or even Chip 8/Bytepusher, and want the next challenge. The next usual steps up (Gameboy/NES) are not completey insurmountable, however I present an option for a more gradual difficulty increase.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+At the end, you will
+- have a reusable implementation of the same cpu core that systems such as the NES and Commodore 64 use
+- understand how the common tilemap rendering system works
+- understand how to go about implementing a sound chip
+- understand some other common miscellaneous concepts like rom banking, dealing with memory maps, irqs, vertical blank, etc.
 
-### Markdown
+### Table of Contents
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/vinheim3/atari-tetris-emulation/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+1. The architecture of the system
+2. Emulating the cpu (6502)
+3. IRQ + port handling
+4. Tilemap rendering
+5. The sound chip (Atari's Pokey)
