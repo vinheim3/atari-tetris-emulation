@@ -33,7 +33,7 @@ When we get into the implementation of the CPU, we'll understand that the 6502 h
 
 On the NES, for example, a cartridge may hook itself up so that it can interrupt the CPU on certain scanlines, eg if you want to switch graphics on a certain scanline for the status bar.
 
-In Atari Tetris' case, the IRQ vector is called 8 times a frame (60 frames per second), at scanlines 16, 48, 80, 112, 144, 176, 208, 240 (ie 16+32x). It's important to implement interrupt vectors as typically very important sync code is called here, to keep the gameplay running at the right speed
+In Atari Tetris' case, the IRQ vector is called 8 times a frame (60 frames per second), at scanlines 16, 48, 80, 112, 144, 176, 208, 240 (ie 16+32x). It's important to implement interrupt vectors, as typically very important sync code is called here, to keep the gameplay running at the right speed
 
 ### Work RAM
 
