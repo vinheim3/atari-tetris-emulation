@@ -6,7 +6,7 @@ At the end, you will
 - have a reusable implementation of the same cpu core that systems such as the NES and Commodore 64 use
 - understand how the common tilemap rendering system works
 - understand how to go about implementing a sound chip
-- understand some other common miscellaneous concepts like rom banking, dealing with memory maps, irqs, vertical blank, etc work.
+- understand some other common miscellaneous concepts like rom banking, dealing with memory maps, irqs, vertical blank, etc
 
 ### Table of Contents
 
