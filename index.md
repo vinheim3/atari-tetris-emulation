@@ -11,7 +11,10 @@ At the end, you will
 ### Table of Contents
 
 1. [The architecture of the system](architecture.md)
-2. Emulating the cpu (6502)
-3. IRQ + port handling
+2. Memory map
+3. Emulating the cpu (6502)
 4. Tilemap rendering
-5. The sound chip (Atari's Pokey)
+5. Atari's Slapstic 101
+6. EEPROM
+7. IRQ + port handling
+8. The sound chip (Atari's Pokey)
