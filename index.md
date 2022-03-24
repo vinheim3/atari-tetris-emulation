@@ -15,6 +15,6 @@ At the end, you will
 3. Emulating the cpu (6502)
 4. Tilemap rendering
 5. Atari's Slapstic 101
-6. EEPROM
-7. IRQ + port handling
+6. EEPROM + IRQ
+7. Port handling
 8. The sound chip (Atari's Pokey)
