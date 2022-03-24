@@ -12,7 +12,7 @@ At the end, you will
 
 1. [The architecture of the system](architecture.md)
 2. [Memory map](memorymap.md)
-3. Emulating the cpu (6502)
+3. [Emulating the cpu (6502)](6502.md)
 4. Tilemap rendering
 5. Atari's Slapstic 101
 6. EEPROM + IRQ
