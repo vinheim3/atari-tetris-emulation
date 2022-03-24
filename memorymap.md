@@ -1,8 +1,8 @@
 # The memory map
 
-When emulating a given system, an overly simplified, and partial in many cases, view would be that you are emulating a CPU and how it reads from an address, how it processes that data and internal data, and how it can write out to addresses.
+When emulating a given system, an overly simplified (and partial in many cases) view would be that you are emulating a CPU and how it reads from an address, how it processes that data and internal data, and how it can write out to addresses.
 
-Whichever components these read/writes happen to communicate with, determines the side effects of the system, or the data that gets returned back to you, eg writing to 0x2802 affects some sound frequency internal to the 1st Pokey sound chip.
+Whichever components these read/writes happen to communicate with, determines the side effects of the component/system, or may affect the data that gets returned back to you on a read, eg writing to 0x2802 affects some sound frequency internal to the 1st Pokey sound chip.
 
 ![Memory map](memorymap.png)
 
@@ -27,6 +27,8 @@ This refers to the registers from 0x3000 to 0x3c00
 * Coin counters - I have not yet implemented this, and from searching, it seems similar to Watchdog in that it may have been used for hardware-related issues
 
 ### PRG ROM
+
+ROM is read-only memory. You can only read from these addresses.
 
 The PRG ROM file is 0x10000 in size. On a 6502 this would take up the entire 16-bit address space. In order to cater to ROM size issues in general, a concept of ROM banking had already been around. Essentially the CPU would not directly read from ROM, but some intermediate device that could decide which window of the ROM to read from. A developer would have control over that window, via writes to an address that the intermediate device cares about reading from. The Gameboy, for example, could handle 8MB games despite having a 32KB ROM region
 
