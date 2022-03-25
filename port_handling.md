@@ -21,4 +21,3 @@ Pokey 2 (0x2810-0x281f) will yield a value with these bits set:
 * Bit 2 - Player 1 right
 * Bit 1 - Player 1 down
 * Bit 0 - Player 1's button
-* 
