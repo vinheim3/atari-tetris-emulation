@@ -6,11 +6,9 @@ The Slapstic is a security device by Atari that made it difficult to just copy i
 
 It would hold an internal rom bank value between 0-3, initialized to 3. When that value is 0 or 2, PRG ROM at 0x0000-0x3fff could be read from. When that value is 1 or 3, PRG ROM at 0x4000-0x7fff could be read from
 
-As mentioned previously, the fixed bank at 0x8000-0xffff references the rest of the 0x8000 bytes of ROM
+The Slapstic has an internal state machine, starting at `IDLE`. During the `BIT_SET` state, it also has an `odd/even` mode
 
-The Slapstic has an internal state machine, starting at `IDLE`
-
-In the following sections, Slapstic offsets means an offset from 0x6000. 
+In the following sections, Slapstic offsets means an offset from its memory map address at 0x6000. 
 
 ## Changing banks
 
@@ -22,7 +20,7 @@ To attempt any of these modes, you needed to move from `IDLE` to `ACTIVE` by wri
 
 By simply writing to offsets 0x80, 0x90, 0xa0, 0xb0, (ie 0x6080-0x60b0) you would change the internal rom bank value respectively. The state would then go back to `IDLE`
 
-You can write to 0x6080 and 0x6090 and that would be sufficient from a programmer's perspective for developing Tetris, but the security device requires using the more difficult options
+You can write to 0x6080 and 0x6090 and that would be sufficient from a programmer's perspective for developing Tetris, but I guess Atari would have required use of the more difficult options to take advantage of the security device
 
 Basic banking mode is only used during Service mode, when checking if the ROM is valid
 
