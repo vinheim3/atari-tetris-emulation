@@ -8,6 +8,10 @@ At the end, you will
 - understand how to go about implementing a sound chip
 - understand some other common miscellaneous concepts like rom banking, dealing with memory maps, irqs, vertical blank, etc
 
+This guide assumes some familiarity with emulating a simpler system
+
+Credit mostly goes to the MAME source for detailed information on the system
+
 ### Table of Contents
 
 1. [The architecture of the system](architecture.md)
