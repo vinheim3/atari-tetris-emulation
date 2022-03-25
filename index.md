@@ -15,6 +15,6 @@ At the end, you will
 3. [Emulating the cpu (6502)](6502.md)
 4. [Tilemap rendering](rendering.md)
 5. [Atari's Slapstic 101](slapstic101.md)
-6. EEPROM + IRQ
+6. [EEPROM + IRQ](eeprom_irq.md)
 7. Port handling
 8. The sound chip (Atari's Pokey)
