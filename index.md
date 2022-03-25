@@ -16,5 +16,5 @@ At the end, you will
 4. [Tilemap rendering](rendering.md)
 5. [Atari's Slapstic 101](slapstic101.md)
 6. [EEPROM + IRQ](eeprom_irq.md)
-7. Port handling
+7. [Port handling](port_handling.md)
 8. The sound chip (Atari's Pokey)
