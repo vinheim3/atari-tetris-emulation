@@ -1,6 +1,6 @@
 # EEPROM
 
-The EEPROM is a read/write area of 0x200 bytes. It starts off in a 'locked' state, and should be initialized to all 0xff, otherwise the game will not boot due to some code being stuck in an infinite loop waiting to read an 0xff
+The EEPROM is a read/write save data area of 0x200 bytes, from 0x2400-0x25ff. It starts off in a 'locked' state, and should be initialized to all 0xff, otherwise the game will not boot due to some code being stuck in an infinite loop waiting to read an 0xff
 
 Reads can only happen while locked
 
