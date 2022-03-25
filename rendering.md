@@ -4,7 +4,7 @@
 
 Atari's Tetris has a 0x10000-byte ROM for its graphics. These graphics are stored such that every 0x20 bytes represents a 4bpp 8x8 tile. This gives us 0x800 tiles
 
-Vram is 0x1000 bytes. Each 8x8 pixel tile takes up 2 bytes, the 1st being a tile idx that references a 0x20-byte tile in CHR ROM, and the 2nd being tile attributes
+Vram is 0x1000 bytes, from 0x1000-0x1fff. Each 8x8 pixel tile takes up 2 bytes, the 1st being a tile idx that references a 0x20-byte tile in CHR ROM, and the 2nd being tile attributes
 
 As a byte can only refer to 0x100 bytes, 3 bits of the tile attribute allow us to refer to up to tile 0x7ff
 
@@ -14,7 +14,7 @@ The screen is 336 pixels wide and 240 pixels high, so some tiles are not display
 
 ### General info - palettes
 
-Palettes use up 0x100 bytes. This consists of 16 palettes with 16 colours each, as 4bpp allows you to reference 16 colours
+Palettes use up 0x100 bytes, from 0x2000-0x20ff. This consists of 16 palettes with 16 colours each, as 4bpp allows you to reference 16 colours
 
 Each colour, taking up a byte each, has the following bit format: `rrrgggbb` from most-significant bit to least
 
