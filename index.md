@@ -19,6 +19,5 @@ Credit mostly goes to the MAME source for detailed information on the system
 3. [Emulating the cpu (6502)](6502.md)
 4. [Tilemap rendering](rendering.md)
 5. [Atari's Slapstic 101](slapstic101.md)
-6. [EEPROM + IRQ](eeprom_irq.md)
-7. [Port handling](port_handling.md)
-8. [The sound chip (Atari's Pokey)](pokey.md)
+6. [EEPROM + IRQ + Port handling](eeprom_irq_port_handling.md)
+7. [The sound chip (Atari's Pokey)](pokey.md)
