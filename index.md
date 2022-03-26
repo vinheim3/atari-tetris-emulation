@@ -21,4 +21,4 @@ Credit mostly goes to the MAME source for detailed information on the system
 5. [Atari's Slapstic 101](slapstic101.md)
 6. [EEPROM + IRQ](eeprom_irq.md)
 7. [Port handling](port_handling.md)
-8. The sound chip (Atari's Pokey)
+8. [The sound chip (Atari's Pokey)](pokey.md)
