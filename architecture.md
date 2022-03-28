@@ -9,7 +9,9 @@ The system has a master clock speed of 14,318,181Hz
 * The CPU and APU operate at 1/8th that speed. The CPU's clock speed means it can run approx. 1,789,772 6502 CPU cycles every second, and its APU's speed means that every CPU cycle, you can tick its counters down once.
 * The PPU plots pixels at 1/2 that speed. The PPU's speed doesn't matter too much as you can get away with tilemap rendering. 
 
-While the screen is 336x240 pixels, the screen plots pixels as if 456x262. When the CRT beam's horizontal position is 336 to 456, it is in a horizontal blanking mode, where the beam is moving from the right side of the screen to the beginning of the next scanline. When the CRT beam's vertical position is 240 to 262, it is in vertical blanking mode, where the beam is moving from the bottom-right to the top-left of the screen. So a scanline will take 1,789,772/60/262 cycles to execute. This information becomes important as an event known as an IRQ happens 8 times a frame at specific scanlines.
+While the screen is 336x240 pixels, the screen plots pixels as if 456x262. When the CRT beam's horizontal position is 336 to 456, it is in a horizontal blanking mode, where the beam is moving from the right side of the screen to the beginning of the next scanline. When the CRT beam's vertical position is 240 to 262, it is in vertical blanking mode, where the beam is moving from the bottom-right to the top-left of the screen. So, as it runs 60 frames a second, a scanline will take 1,789,772/60/262 cycles to execute. This information becomes important as an event known as an IRQ happens 8 times a frame at specific scanlines.
+
+![Screen Setup](screensetup.png)
 
 ## Architecture overview
 
