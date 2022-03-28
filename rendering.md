@@ -1,16 +1,18 @@
 # Tilemap rendering
 
+![Rendering setup](renderingsetup.png)
+
 ### General info - tiles
 
 Atari's Tetris has a 0x10000-byte ROM for its graphics. These graphics are stored such that every 0x20 bytes represents a 4bpp 8x8 tile. This gives us 0x800 tiles
 
-Vram is 0x1000 bytes, from 0x1000-0x1fff. Each 8x8 pixel tile takes up 2 bytes, the 1st being a tile idx that references a 0x20-byte tile in CHR ROM, and the 2nd being tile attributes
+Vram is 0x1000 bytes, from 0x1000-0x1fff. Each 8x8 pixel tile takes up 2 bytes, the 1st being a tile idx that references a 0x20-byte tile in CHR ROM, and the 2nd being tile attributes, so essentially a tilemap of 0x800 tiles
 
 As a byte can only refer to 0x100 bytes, 3 bits of the tile attribute allow us to refer to up to tile 0x7ff
 
-If you lay out the 0x1000/2 tiles as being 0x40 tiles wide and 0x20 tiles high, this would measure 512 pixels wide by 256 pixels high
+If you lay out the 0x800 tilemap tiles as being 0x40 tiles wide and 0x20 tiles high, this would measure 512 pixels wide by 256 pixels high
 
-The screen is 336 pixels wide and 240 pixels high, so some tiles are not displayed
+The screen is 336 pixels wide and 240 pixels high, so some tiles are not displayed. In the diagram above, we can see 22 columns of tiles are hidden, and 2 rows of tiles are hidden.
 
 ### General info - palettes
 
