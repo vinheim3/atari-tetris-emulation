@@ -10,7 +10,7 @@ The EEPROM can be unlocked by writing to 0x3400
 
 # IRQs
 
-At scanlines `16 + 32*v` for `v = 0 to 7`, the system will hold the CPU's IRQ line active. This will cause the CPU to be interrupted and jump to the IRQ vector if interrupts are enabled for it
+At scanlines `16 + 32*v` for `v = 0 to 7`, the system will hold the CPU's IRQ line active. This will cause the CPU to be interrupted and jump to the IRQ vector once interrupts are enabled for the CPU.
 
 Considering that servicing the interrupt disables interrupts in the process, and that the IRQ vector's `reti` will re-enable it, the game will need to find some way to make the CPU's IRQ line inactive, otherwise when returning from the IRQ vector, the CPU will go back and service the IRQ vector again straight away
 
