@@ -13,6 +13,8 @@ While the screen is 336x240 pixels, the screen plots pixels as if 456x262. When 
 
 ![Screen Setup](screensetup.png)
 
+In the diagram above, the dotted lines symbolise hblank/vblank time, how the virtual screen is sized based on the extra time it takes for the CRT beam to reposition itself.
+
 ## Architecture overview
 
 ![Architecture](atariarch.png)
